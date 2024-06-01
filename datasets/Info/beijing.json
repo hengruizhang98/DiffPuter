@@ -1,0 +1,7 @@
+{
+    "name": "beijing",
+    "num_col_idx": [5,6,7,9,10,11],
+    "cat_col_idx": [0,1,2,3,8],
+    "target_col_idx": [4]
+}
+
