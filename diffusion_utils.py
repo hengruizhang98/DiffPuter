@@ -4,7 +4,7 @@
 import torch
 import numpy as np
 from scipy.stats import betaprime
-from tqdm import tqdm
+
 #----------------------------------------------------------------------------
 # Loss function corresponding to the variance preserving (VP) formulation
 # from the paper "Score-Based Generative Modeling through Stochastic
@@ -37,7 +37,7 @@ def impute_mask(net, x, mask, num_samples, dim, num_steps = 50, device = 'cuda:0
     N = 10
     with torch.no_grad():
 
-        for i, (t_cur, t_next) in tqdm(enumerate(zip(t_steps[:-1], t_steps[1:])), total=num_steps-1):
+        for i, (t_cur, t_next) in enumerate(zip(t_steps[:-1], t_steps[1:])):
             if i < num_steps - 1:
          
                 for j in range(N):
