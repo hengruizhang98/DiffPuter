@@ -1,0 +1,13 @@
+{
+    "iris": {
+        "headers": [
+            "Scenario",
+            "miss_pct [0, 1]",
+            "Evaluated: mae"
+        ],
+        "rmse": [],
+        "wasserstein": [],
+        "auroc": [],
+        "org_auroc_score": 0.9913333333333334
+    }
+}
